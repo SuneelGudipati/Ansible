@@ -13,6 +13,7 @@ This repository contains information and best practices for using Ansible, an op
 - [Using Ansible Vault](VAULT.md)
 - [Common Use Cases](USE_CASES.md)
 - [Best Practices](BEST_PRACTICES.md)
+- [Ansible Interview FAQ's](FAQS.md)
 
 ## Author
 Suneel Gudipati
