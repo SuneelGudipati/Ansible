@@ -43,7 +43,7 @@ ansibleuser ALL=(ALL) NOPASSWD: ALL
 
 ### **4. Setup Passwordless Authentication**
 
-#### On the Control Node:
+#### On all the Servers:
 
 1. Enable password authentication by editing the SSH config:
 
@@ -51,13 +51,17 @@ ansibleuser ALL=(ALL) NOPASSWD: ALL
 sudo vim /etc/ssh/sshd_config
 ```
 
-Set `PasswordAuthentication` to `yes`, then restart the SSH service:
+   Set `PasswordAuthentication` to `yes`, then restart the SSH service:
 
 ```bash
 sudo systemctl restart sshd
 ```
 
-2. Generate an SSH key on the Control Node:
+2. Generate an SSH key on the Control Node after login as ansibleuser:
+
+```bash
+sudo su ansibleuser
+```
 
 ```bash
 ssh-keygen -t rsa
@@ -83,19 +87,19 @@ ssh ansibleuser@<managed_node_ip>
 sudo vim /etc/ansible/ansible.cfg
 ```
 
-Uncomment the following line:
+2. Uncomment the following line:
 
 ```bash
 inventory = /etc/ansible/hosts
 ```
 
-2. Edit the Ansible hosts file:
+3. Edit the Ansible hosts file:
 
 ```bash
 sudo vim /etc/ansible/hosts
 ```
 
-Add your managed nodes under groups like:
+4. Add your managed nodes under groups like:
 
 ```ini
 [web-servers]
