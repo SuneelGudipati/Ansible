@@ -118,6 +118,7 @@ To test the connection with the Managed Nodes:
 ```bash
 ansible all -m ping
 ```
+Note: Add `interpreter_python=auto_silent` in the `/etc/ansible/ansible.cnf` file (anywhere).
 
 Additional ad-hoc commands:
 
