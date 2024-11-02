@@ -9,6 +9,7 @@ This repository contains information and best practices for using Ansible, an op
 - [Handling AWS Credentials](CREDENTIALS.md)
 - [Ansible Roles](ROLES.md)
 - [Using Ansible Vault](VAULT.md)
+- [Ansible Basic Commands](Ansible_Basic_Commnads.md)
 - [Common Use Cases](USE_CASES.md)
 - [Best Practices](BEST_PRACTICES.md)
 - [Ansible Basic Commands](Ansible_Basic_Commnads.md)
