@@ -3,9 +3,7 @@
 This repository contains information and best practices for using Ansible, an open-source IT automation tool, particularly in conjunction with Amazon Linux and AWS services.
 
 ## Contents
-- [Installation](INSTALLATION.md)
-- [Communication with Managed Nodes](COMMUNICATION.md)
-- [Configuration for Ansible](CONFIGURATION.md)
+- [Installation, Configaration and Communication with Managed Nodes](INSTALLATION.md)
 - [Using Playbooks](PLAYBOOKS.md)
 - [Ansible Modules for AWS](MODULES.md)
 - [Handling AWS Credentials](CREDENTIALS.md)
